@@ -711,3 +711,20 @@ a{
 form{
     padding-top: 30px;
 }
+/* ============== footer end ========= */
+/* ============== scroll top bottom start ========= */
+.top-bottom{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background: var(--hc);
+    position: fixed;
+    bottom: 20px;
+    left: -100%;
+    z-index: 999;
+    transition: all linear 0.10s;
+    align-items: center;
+    cursor: pointer;
+}
+/* ============== scroll top bottom end ========= */

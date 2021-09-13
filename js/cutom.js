@@ -12,7 +12,23 @@ $(window).scroll(function(){
     }else{
         $("nav").removeClass("header-bg");
     }
+    if(scrolling > 400){
+        $(".top-bottom").css({
+            "left": "90%",
+        });
+    }else{
+        $(".top-bottom").css({
+            "left": "-100%"
+        })
+    }
 });
+$(".top-bottom").click(
+    function(){
+        $("body,html").animate({
+            scrollTop: "0",
+        },1500);
+    }
+);
 
 // banner slick js 
 $(".banner-container").slick({
@@ -65,3 +81,4 @@ var scene = document.getElementById('scene-one');
 var parallaxInstance = new Parallax(scene);
 var scene = document.getElementById('scene-three');
 var parallaxInstance = new Parallax(scene); // start ment end
+// scroll bottom start
